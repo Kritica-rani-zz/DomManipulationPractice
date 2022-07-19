@@ -14,3 +14,9 @@ link.href = "https://forcemipsum.com/";
 link.target = "blank";
 link.innerText = "take me to the website";
 document.body.appendChild(link);
+//Calculate Word count
+let wordCount = para.innerText.split(" ").length;
+let wordCountElem = document.createElement("div");
+wordCountElem.innerText = `${wordCount} words`;
+document.body.appendChild(wordCountElem);
+//document.body.insertBefore(wordCountElem,para)
